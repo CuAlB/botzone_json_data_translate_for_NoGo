@@ -1,12 +1,14 @@
-## botzone-json-data-translate-NoGo
+# botzone-json-data-translate-NoGo
 将botzone下载的json数据集格式进行转换程序,并额外提供了一个面向AlphaPig数据集的适配程序
 如果您只需要从botzone的json格式数据中提取棋盘,胜负方,以及每次落子位置,请仅参考python程序即可
 cpp为面向AlphaPig将python程序提取的txt文件格式修改成可以直接用于其神经网络训练的数据集,在这里附上原文链接:
 https://github.com/byxiaozhi/AlphaPig-NoGo
 
-## 具体功能
-# botzone数据提取.py:
+# 具体功能
+## botzone数据提取.py:
 python程序,经测试可以将botzone开源数据集提取成可供进一步操作的数据,提取后具体格式如下:起始数字为获胜方,每行82个数字前81个数字为棋盘,最后一个为最新一步棋的落点
 
-# 将提取数据神经网络化.cpp:
+## 将提取数据神经网络化.cpp:
 使用C++17的文件资源管理库,需提前在项目属性处调好,可以将提取好的数据,读取并按对弈来设置棋盘,最终将其分为六个通道连同胜率一起保存,转换为可以用于训练的数据格式,这样就摆脱了自博弈的限制,允许我们使用更高性能的AI博弈数据用于训练
+
+请自行修改代码中路径,运行图例附在存储库内
