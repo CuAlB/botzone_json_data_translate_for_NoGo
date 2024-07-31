@@ -1,0 +1,2 @@
+# botzone-_-NoGo
+将botzone下载的json数据集格式进行转换程序,并额外提供了一个面向AlphaPig数据集的适配程序
