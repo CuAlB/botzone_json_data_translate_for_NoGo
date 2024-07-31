@@ -1,2 +1,5 @@
-# botzone-_-NoGo
+# botzone-json-data-translate-NoGo
 将botzone下载的json数据集格式进行转换程序,并额外提供了一个面向AlphaPig数据集的适配程序
+如果您只需要从botzone的json格式数据中提取棋盘,胜负方,以及每次落子位置,请仅参考python程序即可
+cpp为面向AlphaPig将python程序提取的txt文件格式修改成可以直接用于其神经网络训练的数据集,在这里附上原文链接:
+https://github.com/byxiaozhi/AlphaPig-NoGo
